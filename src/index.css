@@ -1,0 +1,175 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: poppins ,sans-serif;
+   
+    
+}
+
+.App{
+    max-width: 1920px;
+    margin: auto;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.login{
+    background: url('https://i.artfile.me/wallpaper/16-03-2017/1920x1080/goroda-nyu-jork--ssha-nyu---jork-noch-og-1141933.jpg');
+    padding: 2% 0px;
+    height: 100vh;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+
+
+
+.dev{
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+	0% {
+		transform: scale(0.5);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+.containerr{
+    /* background: linear-gradient(135deg, aqua, pink, yellow,orange); */
+    max-width: 350px;
+    width: 100%;
+    margin: auto;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 10px 10px 2px rgba(0, 0, 0, 0.15);
+  }
+  .containerr form .title{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0 10px 0;
+    position: relative;
+  }
+  .containerr form .title:before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 33px;
+    left: 0px;
+    bottom: 3px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+  }
+  .pass{
+    position: relative;
+  }
+  .ff{
+    position: absolute;
+    top: 30%;
+    right: 4%;
+  }
+  .containerr form .input-box{
+    width: 100%;
+    height: 45px;
+    margin-top: 25px;
+    position: relative;
+  }
+  .containerr form .input-box input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-size: 16px;
+    border: none;
+  }
+  .containerr form .underline::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #ccc;
+    left: 0;
+    bottom: 0;
+  }
+  .containerr form .underline::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.3s ease;
+  }
+  .containerr form .input-box input:focus ~ .underline::after,
+  .containerr form .input-box input:valid ~ .underline::after{
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  .containerr form .button{
+    margin: 40px 0 20px 0;
+  }
+  .containerr .input-box input[type="submit"]{
+    background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+    font-size: 17px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .containerr .input-box input[type="submit"]:hover{
+    letter-spacing: 1px;
+    background: linear-gradient(to left, #99004d 0%, #ff0080 100%);
+  }
+  .containerr .option{
+    font-size: 14px;
+    text-align: center;
+  }
+  .containerr .facebook a,
+  .containerr .twitter a{
+    display: block;
+    height: 45px;
+    width: 100%;
+    font-size: 15px;
+    text-decoration: none;
+    padding-left: 20px;
+    line-height: 45px;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .containerr .facebook i,
+  .containerr .twitter i{
+    padding-right: 12px;
+    font-size: 20px;
+  }
+  .containerr .twitter a{
+    background: linear-gradient(to right,  #00acee 0%, #1abeff 100%);
+    margin: 20px 0 15px 0;
+  }
+  .containerr .twitter a:hover{
+    background: linear-gradient(to left,  #00acee 0%, #1abeff 100%);
+    margin: 20px 0 15px 0;
+  }
+  .containerr .facebook a{
+    background: linear-gradient( to right,  #3b5998 0%, #476bb8 100%);
+    margin: 20px 0 50px 0;
+  }
+  .containerr .facebook a:hover{
+    background: linear-gradient( to left,  #3b5998 0%, #476bb8 100%);
+    margin: 20px 0 50px 0;
+  }
